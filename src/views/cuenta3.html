@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Cajero Automatico DEV.F</h1>
+      <hr />
+    </header>
+
+    <main>
+      <div class="contenedor">
+        <h2>Cuenta 1</h2>
+        <h3 >Usuario:<span id="nombre"></span></h3>
+        <h3>Saldo:<span  id="saldo"></span></h3>
+
+        <div>
+          <h3 id="saldo">Ingresar Saldo:</h3>
+          <form id="ingresar_saldo" class="elementos_cuenta">
+            <input id="input" class="area" type="number" name="ingresar" />
+            <button type="submit">Meter dinero</button>
+            <div id="msg"></div>
+          </form>
+
+          <h3>Retirar Saldo:</h3>
+          <form id="retirar_saldo" class="elementos_cuenta">
+            <input id="input2" class="area" type="number" name="retirar" />
+            <button type="submit">Retirar dinero</button>
+            <div id="msg2"></div>
+          </form>
+        </div>
+
+      </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="../js/main3.js"></script>
+  </body>
+</html>

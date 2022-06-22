@@ -1,0 +1,77 @@
+html,
+body {
+  background-color: #21232a;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-size: 1.3rem; */
+  /* padding: 70px; */
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+}
+
+button {
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 10%;
+  cursor: pointer;
+  background-color: gray;
+  border: none;
+  color: white;
+  font-size: 2rem;
+}
+
+.area {
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.header {
+  font-size: 1.2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.cuentas {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cuenta {
+  background-color: black;
+  border-radius: 10%;
+  border: none;
+  cursor: pointer;
+  font-size: 2.5rem;
+  margin: 2rem;
+  padding: 4rem;
+}
+
+.cuenta a {
+  text-decoration: none;
+  color: white;
+}
+
+.cuentaUsuario {
+  text-align: center;
+}
+
+.elementos_cuenta {
+  display: flex;
+  align-items: center;
+}
