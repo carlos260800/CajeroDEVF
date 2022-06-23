@@ -30,23 +30,30 @@ retirar_saldo.addEventListener("submit", (evento) => {
 });
 
 const agregarSaldo = (evento) => {
-  if (input.value <= 0) {
-    msg.innerHTML = "<h3>Cantidad Invalida</h3>";
+  if (cuenta + parseInt(input.value) <= 990) {
+    if (input.value <= 0) {
+      msg.innerHTML = "<h3>Cantidad Invalida</h3>";
+    } else {
+      cuenta = cuenta + parseInt(input.value);
+      msg.innerHTML = `<h3>Se ingresaron ${input.value}$</h3>`;
+      mostrarSaldo();
+    }
   } else {
-    cuenta = cuenta + parseInt(input.value);
-    msg.innerHTML = `<h3>Se ingresaron ${input.value}$</h3>`;
-
-    mostrarSaldo();
+    msg.innerHTML = "<h3>Cantidad Invalida, Supera los 990 Permitidos</h3>";
   }
 };
 
 const retirarSaldo = (evento) => {
-  if (input2.value <= 0 || input2.value > cuenta) {
-    msg2.innerHTML = "<h3>No puedes retirar esa cantidad</h3>";
+  if (cuenta - parseInt(input2.value) >= 10) {
+    if (input2.value <= 0 || input2.value > cuenta) {
+      msg2.innerHTML = "<h3>No puedes retirar esa cantidad</h3>";
+    } else {
+      cuenta = cuenta - parseInt(input2.value);
+      msg2.innerHTML = `<h3>Se retiraron ${input2.value}$</h3>`;
+      mostrarSaldo();
+    }
   } else {
-    cuenta = cuenta - parseInt(input2.value);
-    msg2.innerHTML = `<h3>Se retiraron ${input2.value}$</h3>`;
-    mostrarSaldo();
+    msg2.innerHTML = "<h3>No Puedes Tener Menos de 10 Pesos en tu Cuenta</h3>";
   }
 };
 
